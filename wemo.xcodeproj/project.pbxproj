@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		376E6C302B748D5C00AF9D61 /* wemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E6C2F2B748D5C00AF9D61 /* wemoApp.swift */; };
+		376E6C322B748D5C00AF9D61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E6C312B748D5C00AF9D61 /* ContentView.swift */; };
+		376E6C342B748D5C00AF9D61 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E6C332B748D5C00AF9D61 /* Item.swift */; };
+		376E6C362B748D5E00AF9D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376E6C352B748D5E00AF9D61 /* Assets.xcassets */; };
+		376E6C392B748D5E00AF9D61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376E6C382B748D5E00AF9D61 /* Preview Assets.xcassets */; };
+		376E6C432B748D5F00AF9D61 /* wemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E6C422B748D5F00AF9D61 /* wemoTests.swift */; };
+		376E6C4D2B748D5F00AF9D61 /* wemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E6C4C2B748D5F00AF9D61 /* wemoUITests.swift */; };
+		376E6C4F2B748D5F00AF9D61 /* wemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E6C4E2B748D5F00AF9D61 /* wemoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		376E6C3F2B748D5F00AF9D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 376E6C242B748D5C00AF9D61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 376E6C2B2B748D5C00AF9D61;
+			remoteInfo = wemo;
+		};
+		376E6C492B748D5F00AF9D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 376E6C242B748D5C00AF9D61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 376E6C2B2B748D5C00AF9D61;
+			remoteInfo = wemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		376E6C2C2B748D5C00AF9D61 /* wemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		376E6C2F2B748D5C00AF9D61 /* wemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wemoApp.swift; sourceTree = "<group>"; };
+		376E6C312B748D5C00AF9D61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		376E6C332B748D5C00AF9D61 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		376E6C352B748D5E00AF9D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		376E6C382B748D5E00AF9D61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		376E6C3E2B748D5F00AF9D61 /* wemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		376E6C422B748D5F00AF9D61 /* wemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wemoTests.swift; sourceTree = "<group>"; };
+		376E6C482B748D5F00AF9D61 /* wemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		376E6C4C2B748D5F00AF9D61 /* wemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wemoUITests.swift; sourceTree = "<group>"; };
+		376E6C4E2B748D5F00AF9D61 /* wemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		376E6C292B748D5C00AF9D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376E6C3B2B748D5F00AF9D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376E6C452B748D5F00AF9D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		376E6C232B748D5C00AF9D61 = {
+			isa = PBXGroup;
+			children = (
+				376E6C2E2B748D5C00AF9D61 /* wemo */,
+				376E6C412B748D5F00AF9D61 /* wemoTests */,
+				376E6C4B2B748D5F00AF9D61 /* wemoUITests */,
+				376E6C2D2B748D5C00AF9D61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		376E6C2D2B748D5C00AF9D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				376E6C2C2B748D5C00AF9D61 /* wemo.app */,
+				376E6C3E2B748D5F00AF9D61 /* wemoTests.xctest */,
+				376E6C482B748D5F00AF9D61 /* wemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		376E6C2E2B748D5C00AF9D61 /* wemo */ = {
+			isa = PBXGroup;
+			children = (
+				376E6C2F2B748D5C00AF9D61 /* wemoApp.swift */,
+				376E6C312B748D5C00AF9D61 /* ContentView.swift */,
+				376E6C332B748D5C00AF9D61 /* Item.swift */,
+				376E6C352B748D5E00AF9D61 /* Assets.xcassets */,
+				376E6C372B748D5E00AF9D61 /* Preview Content */,
+			);
+			path = wemo;
+			sourceTree = "<group>";
+		};
+		376E6C372B748D5E00AF9D61 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				376E6C382B748D5E00AF9D61 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		376E6C412B748D5F00AF9D61 /* wemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				376E6C422B748D5F00AF9D61 /* wemoTests.swift */,
+			);
+			path = wemoTests;
+			sourceTree = "<group>";
+		};
+		376E6C4B2B748D5F00AF9D61 /* wemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				376E6C4C2B748D5F00AF9D61 /* wemoUITests.swift */,
+				376E6C4E2B748D5F00AF9D61 /* wemoUITestsLaunchTests.swift */,
+			);
+			path = wemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		376E6C2B2B748D5C00AF9D61 /* wemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376E6C522B748D5F00AF9D61 /* Build configuration list for PBXNativeTarget "wemo" */;
+			buildPhases = (
+				376E6C282B748D5C00AF9D61 /* Sources */,
+				376E6C292B748D5C00AF9D61 /* Frameworks */,
+				376E6C2A2B748D5C00AF9D61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wemo;
+			productName = wemo;
+			productReference = 376E6C2C2B748D5C00AF9D61 /* wemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		376E6C3D2B748D5F00AF9D61 /* wemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376E6C552B748D5F00AF9D61 /* Build configuration list for PBXNativeTarget "wemoTests" */;
+			buildPhases = (
+				376E6C3A2B748D5F00AF9D61 /* Sources */,
+				376E6C3B2B748D5F00AF9D61 /* Frameworks */,
+				376E6C3C2B748D5F00AF9D61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				376E6C402B748D5F00AF9D61 /* PBXTargetDependency */,
+			);
+			name = wemoTests;
+			productName = wemoTests;
+			productReference = 376E6C3E2B748D5F00AF9D61 /* wemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		376E6C472B748D5F00AF9D61 /* wemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376E6C582B748D5F00AF9D61 /* Build configuration list for PBXNativeTarget "wemoUITests" */;
+			buildPhases = (
+				376E6C442B748D5F00AF9D61 /* Sources */,
+				376E6C452B748D5F00AF9D61 /* Frameworks */,
+				376E6C462B748D5F00AF9D61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				376E6C4A2B748D5F00AF9D61 /* PBXTargetDependency */,
+			);
+			name = wemoUITests;
+			productName = wemoUITests;
+			productReference = 376E6C482B748D5F00AF9D61 /* wemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		376E6C242B748D5C00AF9D61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					376E6C2B2B748D5C00AF9D61 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					376E6C3D2B748D5F00AF9D61 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 376E6C2B2B748D5C00AF9D61;
+					};
+					376E6C472B748D5F00AF9D61 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 376E6C2B2B748D5C00AF9D61;
+					};
+				};
+			};
+			buildConfigurationList = 376E6C272B748D5C00AF9D61 /* Build configuration list for PBXProject "wemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 376E6C232B748D5C00AF9D61;
+			productRefGroup = 376E6C2D2B748D5C00AF9D61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				376E6C2B2B748D5C00AF9D61 /* wemo */,
+				376E6C3D2B748D5F00AF9D61 /* wemoTests */,
+				376E6C472B748D5F00AF9D61 /* wemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		376E6C2A2B748D5C00AF9D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376E6C392B748D5E00AF9D61 /* Preview Assets.xcassets in Resources */,
+				376E6C362B748D5E00AF9D61 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376E6C3C2B748D5F00AF9D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376E6C462B748D5F00AF9D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		376E6C282B748D5C00AF9D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376E6C322B748D5C00AF9D61 /* ContentView.swift in Sources */,
+				376E6C342B748D5C00AF9D61 /* Item.swift in Sources */,
+				376E6C302B748D5C00AF9D61 /* wemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376E6C3A2B748D5F00AF9D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376E6C432B748D5F00AF9D61 /* wemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376E6C442B748D5F00AF9D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376E6C4F2B748D5F00AF9D61 /* wemoUITestsLaunchTests.swift in Sources */,
+				376E6C4D2B748D5F00AF9D61 /* wemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		376E6C402B748D5F00AF9D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 376E6C2B2B748D5C00AF9D61 /* wemo */;
+			targetProxy = 376E6C3F2B748D5F00AF9D61 /* PBXContainerItemProxy */;
+		};
+		376E6C4A2B748D5F00AF9D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 376E6C2B2B748D5C00AF9D61 /* wemo */;
+			targetProxy = 376E6C492B748D5F00AF9D61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		376E6C502B748D5F00AF9D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		376E6C512B748D5F00AF9D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		376E6C532B748D5F00AF9D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 773HUJ59U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malachifrazier.wemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		376E6C542B748D5F00AF9D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 773HUJ59U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malachifrazier.wemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		376E6C562B748D5F00AF9D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 773HUJ59U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malachifrazier.wemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wemo";
+			};
+			name = Debug;
+		};
+		376E6C572B748D5F00AF9D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 773HUJ59U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malachifrazier.wemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wemo";
+			};
+			name = Release;
+		};
+		376E6C592B748D5F00AF9D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 773HUJ59U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malachifrazier.wemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wemo;
+			};
+			name = Debug;
+		};
+		376E6C5A2B748D5F00AF9D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 773HUJ59U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malachifrazier.wemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		376E6C272B748D5C00AF9D61 /* Build configuration list for PBXProject "wemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376E6C502B748D5F00AF9D61 /* Debug */,
+				376E6C512B748D5F00AF9D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376E6C522B748D5F00AF9D61 /* Build configuration list for PBXNativeTarget "wemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376E6C532B748D5F00AF9D61 /* Debug */,
+				376E6C542B748D5F00AF9D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376E6C552B748D5F00AF9D61 /* Build configuration list for PBXNativeTarget "wemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376E6C562B748D5F00AF9D61 /* Debug */,
+				376E6C572B748D5F00AF9D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376E6C582B748D5F00AF9D61 /* Build configuration list for PBXNativeTarget "wemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376E6C592B748D5F00AF9D61 /* Debug */,
+				376E6C5A2B748D5F00AF9D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 376E6C242B748D5C00AF9D61 /* Project object */;
+}
