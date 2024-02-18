@@ -26,15 +26,12 @@ struct wemoApp: App {
     @State private var journal = JournalModel()
     @State private var llmController = LLMController()
     @State private var loading = true
-    @State private var isLoggedIn = false
+    @State private var isLoggedIn = true
    
 
 
     var body: some Scene {
         WindowGroup {
-//            if !isLoggedIn {
-//                LoginView(isLoggedIn: $isLoggedIn)
-//            }
             if loading {
                 LoadingScreen()
                     .task {

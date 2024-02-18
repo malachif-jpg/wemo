@@ -35,23 +35,48 @@ struct JournalScreen: View {
                         }.padding(.bottom, 20)
                         HStack{
                             TextField("Search", text: $searchText)
-                                        .padding()
-                                        .padding(.leading, 35)
-                                        .background(
-                                            Color.gray.opacity(0.2)
-                                                .cornerRadius(10) //
-                                                .overlay(
-                                                    HStack {
-                                                        Image(systemName: "magnifyingglass")
-                                                            .foregroundColor(.gray)
-                                                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)    .padding(.leading, 8)
-                                                    }
-                                                )
-                                        ).padding(.bottom, 25)
-                                       
-                                        
+                                .padding()
+                                .padding(.leading, 35)
+                                .background(
+                                    Color.gray.opacity(0.2)
+                                        .cornerRadius(10) //
+                                        .overlay(
+                                            HStack {
+                                                Image(systemName: "magnifyingglass")
+                                                    .foregroundColor(.gray)
+                                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)    .padding(.leading, 8)
+                                            }
+                                        )
+                                ).padding(.bottom, 20)
+                            
+                            
                         }
                         VStack{
+                            NavigationLink(destination: (AuraView())){
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 30) // Rounded rectangle shape
+                                        .fill(Color.designPrimary) // Fill color of the rectangle
+                                        .frame(width: 340, height: 50) // Size of the rectangle
+                                    
+                                    HStack{
+                                        Text("Your Weekly Aura Is Ready!") // Text to display
+                                            .foregroundColor(.white) // Text color
+                                            .font(.headline) // Font style
+                                            .bold()
+                                        Spacer();
+                                        Image(systemName: "arrow.right.circle").font(.system(size: 25)).foregroundStyle(Color.designTextSecondary)
+                                    }.padding(.horizontal)
+                                       
+                                    
+                                        .shadow(radius: 10) // Optional shadow for a bit of depth
+                                    
+                                }.padding(.bottom,10)
+                                
+                            }
+                        
+                    
+                        
+                        
                             if journalModel.entries.isEmpty {
                                 Text("No journal entries :(")
                             } else {
