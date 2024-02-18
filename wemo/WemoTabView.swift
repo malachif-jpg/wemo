@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WemoTabView: View {
+    @Environment(LLMController.self) var llmController
     var body: some View {
         
         TabView {
@@ -16,7 +17,7 @@ struct WemoTabView: View {
                     Image(systemName: "book")
                 }
             
-           LLMScreen()
+            LLMScreen(llmController: llmController)
                 .tabItem {
                     Image(systemName: "brain")
                 }

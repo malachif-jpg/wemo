@@ -92,7 +92,6 @@ struct CreateEntryView: View {
                             }
                     }
                     
-                    
                     Spacer()
                     
                 }
@@ -120,7 +119,7 @@ struct CreateEntryView: View {
                             do {
                                 isPresented = false
                                 if let returnedEntry = try await entry.publishJournal(userId: mainUser.userId) {
-                                    journal.entries.append(returnedEntry)
+                                    journal.entries.insert(returnedEntry, at: 0)
                                 }
                             } catch {
                                 print("Error: \(error)")
@@ -157,4 +156,5 @@ struct CreateEntryView: View {
 #Preview {
     CreateEntryView(isPresented: .constant(true))
         .environment(User(name: "", userId: ""))
+        .environment(JournalModel())
 }

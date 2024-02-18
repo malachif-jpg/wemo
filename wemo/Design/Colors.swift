@@ -17,6 +17,9 @@ extension Color {
     static var designTextSecondary: Color {
         return Color.white
     }
+    static var designAccent: Color {
+        return Color(red: 247/255.0, green: 247/255.0, blue: 247/255.0)
+    }
 }
 
 

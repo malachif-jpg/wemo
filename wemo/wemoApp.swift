@@ -24,6 +24,7 @@ struct wemoApp: App {
     }()
     @State private var mainUser = User(name: "Hannah", userId: "b7a35889-a19c-42e8-b648-22dd102d227e")
     @State private var journal = JournalModel()
+    @State private var llmController = LLMController()
     @State private var loading = true
     @State private var isLoggedIn = false
    
@@ -44,8 +45,10 @@ struct wemoApp: App {
                 WemoTabView()
                     .environment(mainUser)
                     .environment(journal)
+                    .environment(llmController)
             }
         }
         .modelContainer(sharedModelContainer)
+        
     }
 }

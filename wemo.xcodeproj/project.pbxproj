@@ -28,9 +28,14 @@
 		377451652B8152C000886DFD /* View+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377451642B8152C000886DFD /* View+Placeholder.swift */; };
 		377451672B816B1C00886DFD /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377451662B816B1C00886DFD /* MultilineTextField.swift */; };
 		377451692B816B3600886DFD /* SelectJournalImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377451682B816B3600886DFD /* SelectJournalImagesView.swift */; };
-		3774516B2B8181C700886DFD /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3774516A2B8181C700886DFD /* Test2.swift */; };
+		3774516B2B8181C700886DFD /* ExpandingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3774516A2B8181C700886DFD /* ExpandingTextField.swift */; };
 		3774516D2B81945700886DFD /* CreateJournalEditBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3774516C2B81945700886DFD /* CreateJournalEditBar.swift */; };
 		3774516F2B81B9CF00886DFD /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3774516E2B81B9CF00886DFD /* CustomError.swift */; };
+		377451722B82032900886DFD /* LLMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377451712B82032900886DFD /* LLMController.swift */; };
+		377451742B82039700886DFD /* LLMMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377451732B82039700886DFD /* LLMMessage.swift */; };
+		377451762B82436B00886DFD /* ExpandingTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377451752B82436B00886DFD /* ExpandingTextEditor.swift */; };
+		377451782B82452E00886DFD /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377451772B82452E00886DFD /* Test2.swift */; };
+		3774517A2B82522900886DFD /* View+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377451792B82522900886DFD /* View+DismissKeyboard.swift */; };
 		37BF7BDA2B7DEB4700075886 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF7BD92B7DEB4700075886 /* Colors.swift */; };
 		37C2BFD42B813D450056E345 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C2BFD32B813D450056E345 /* Supabase.swift */; };
 		75B7A27B2B81D1EA00BC22CC /* LLMScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A27A2B81D1EA00BC22CC /* LLMScreen.swift */; };
@@ -90,9 +95,14 @@
 		377451642B8152C000886DFD /* View+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Placeholder.swift"; sourceTree = "<group>"; };
 		377451662B816B1C00886DFD /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		377451682B816B3600886DFD /* SelectJournalImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectJournalImagesView.swift; sourceTree = "<group>"; };
-		3774516A2B8181C700886DFD /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
+		3774516A2B8181C700886DFD /* ExpandingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingTextField.swift; sourceTree = "<group>"; };
 		3774516C2B81945700886DFD /* CreateJournalEditBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJournalEditBar.swift; sourceTree = "<group>"; };
 		3774516E2B81B9CF00886DFD /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		377451712B82032900886DFD /* LLMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMController.swift; sourceTree = "<group>"; };
+		377451732B82039700886DFD /* LLMMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMMessage.swift; sourceTree = "<group>"; };
+		377451752B82436B00886DFD /* ExpandingTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingTextEditor.swift; sourceTree = "<group>"; };
+		377451772B82452E00886DFD /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
+		377451792B82522900886DFD /* View+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		37BF7BD92B7DEB4700075886 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		37C2BFD32B813D450056E345 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 		75B7A27A2B81D1EA00BC22CC /* LLMScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMScreen.swift; sourceTree = "<group>"; };
@@ -169,8 +179,11 @@
 				377451702B81B9EF00886DFD /* Design */,
 				37C2BFD32B813D450056E345 /* Supabase.swift */,
 				377451642B8152C000886DFD /* View+Placeholder.swift */,
+				377451792B82522900886DFD /* View+DismissKeyboard.swift */,
 				377451662B816B1C00886DFD /* MultilineTextField.swift */,
-				3774516A2B8181C700886DFD /* Test2.swift */,
+				3774516A2B8181C700886DFD /* ExpandingTextField.swift */,
+				377451752B82436B00886DFD /* ExpandingTextEditor.swift */,
+				377451772B82452E00886DFD /* Test2.swift */,
 				3774516E2B81B9CF00886DFD /* CustomError.swift */,
 				376E6C332B748D5C00AF9D61 /* Item.swift */,
 				376E6C352B748D5E00AF9D61 /* Assets.xcassets */,
@@ -232,6 +245,8 @@
 				376E6C632B74A24D00AF9D61 /* JournalEntry.swift */,
 				377451622B8146D900886DFD /* NewJournalEntry.swift */,
 				376E6C672B75355900AF9D61 /* User.swift */,
+				377451712B82032900886DFD /* LLMController.swift */,
+				377451732B82039700886DFD /* LLMMessage.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -409,8 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377451722B82032900886DFD /* LLMController.swift in Sources */,
 				377451652B8152C000886DFD /* View+Placeholder.swift in Sources */,
 				3774516D2B81945700886DFD /* CreateJournalEditBar.swift in Sources */,
+				377451742B82039700886DFD /* LLMMessage.swift in Sources */,
 				376E6C322B748D5C00AF9D61 /* ContentView.swift in Sources */,
 				37BF7BDA2B7DEB4700075886 /* Colors.swift in Sources */,
 				75B7A2A32B82562000BC22CC /* AuraView.swift in Sources */,
@@ -436,8 +453,12 @@
 				37C2BFD42B813D450056E345 /* Supabase.swift in Sources */,
 				75B7A2AD2B82574200BC22CC /* LoadingScreen.swift in Sources */,
 				3774516B2B8181C700886DFD /* Test2.swift in Sources */,
+				3774516B2B8181C700886DFD /* ExpandingTextField.swift in Sources */,
+				377451762B82436B00886DFD /* ExpandingTextEditor.swift in Sources */,
+				377451782B82452E00886DFD /* Test2.swift in Sources */,
 				376E6C302B748D5C00AF9D61 /* wemoApp.swift in Sources */,
 				376E6C682B75355900AF9D61 /* User.swift in Sources */,
+				3774517A2B82522900886DFD /* View+DismissKeyboard.swift in Sources */,
 				376E6C6D2B753E2B00AF9D61 /* JournalEntryTile.swift in Sources */,
 				377451632B8146D900886DFD /* NewJournalEntry.swift in Sources */,
 				75B7A27D2B81D91000BC22CC /* HelpScreen.swift in Sources */,

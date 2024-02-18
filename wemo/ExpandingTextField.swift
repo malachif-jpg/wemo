@@ -36,8 +36,7 @@ struct ExpandingTextField: View {
                         self.height = min(calculateHeight(), 100)
                     }
                     .padding(4)
-                
-
+            
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
