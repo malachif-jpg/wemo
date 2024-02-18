@@ -31,7 +31,7 @@ struct wemoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            if !isLoggedIn {
+            if loading {
                 LoadingScreen()
                     .task {
                         await journal.fetchEntries(userId: mainUser.userId)
