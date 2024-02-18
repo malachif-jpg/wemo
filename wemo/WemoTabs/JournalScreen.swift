@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct JournalScreen: View {
-    @State private var journalModel = JournalModel()
     @State private var showCreateEntrySheet = false
     
     @Environment(User.self) var mainUser
+    @Environment(JournalModel.self) var journalModel
     
     var body: some View {
         NavigationStack {
@@ -24,23 +24,27 @@ struct JournalScreen: View {
                                 .font(.title3)
                             Spacer()
                         }
+                        .padding(.horizontal)
                         
                         HStack {
                             Text(dateFormatted())
                             Spacer()
                         }
+                        .padding(.horizontal)
                         
                         if journalModel.entries.isEmpty {
                             Text("No journal entries :(")
                         } else {
                             ForEach(journalModel.entries, id: \.self) { entry in
-                                Text(entry.title)
+                                JournalEntryTile(entry: entry)
+                                    .padding()
                             }
                         }
                         
                     }
                     .padding(.vertical)
                 }
+                .scrollIndicators(.hidden)
                 VStack {
                     Spacer()
                     
@@ -62,8 +66,8 @@ struct JournalScreen: View {
                         }
                     }
                 }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -100,4 +104,5 @@ struct JournalScreen: View {
 #Preview {
     JournalScreen()
         .environment(User(name: "Hannah", userId: ""))
+        .environment(JournalModel())
 }

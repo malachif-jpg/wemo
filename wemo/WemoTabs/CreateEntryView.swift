@@ -12,6 +12,7 @@ struct CreateEntryView: View {
     @State var entry = NewJournalEntry()
     
     @Environment(User.self) var mainUser
+    @Environment(JournalModel.self) var journal
     
     var body: some View {
         ZStack {
@@ -55,7 +56,7 @@ struct CreateEntryView: View {
                 ScrollView {
                     
                     
-                    SelectJournalImagesView()
+                    SelectJournalImagesView(entry: entry)
                     
                     
                     
@@ -116,7 +117,15 @@ struct CreateEntryView: View {
                     
                     Button {
                         Task {
-                            await entry.publishJournal(userId: mainUser.userId)
+                            do {
+                                isPresented = false
+                                if let returnedEntry = try await entry.publishJournal(userId: mainUser.userId) {
+                                    journal.entries.append(returnedEntry)
+                                }
+                            } catch {
+                                print("Error: \(error)")
+                            }
+                            
                         }
                         print("Save journal")
                         // Done button

@@ -24,11 +24,22 @@ struct wemoApp: App {
     }()
     
     @State private var mainUser = User(name: "Hannah", userId: "b7a35889-a19c-42e8-b648-22dd102d227e")
+    @State private var journal = JournalModel()
+    @State private var loading = true
 
     var body: some Scene {
         WindowGroup {
-            WemoTabView()
-                .environment(mainUser)
+            if loading {
+                Text("Loading...")
+                    .task {
+                        await journal.fetchEntries(userId: mainUser.userId)
+                        loading = false
+                    }
+            } else {
+                WemoTabView()
+                    .environment(mainUser)
+                    .environment(journal)
+            }
         }
         .modelContainer(sharedModelContainer)
     }

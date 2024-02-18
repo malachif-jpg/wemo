@@ -8,11 +8,51 @@
 import SwiftUI
 
 struct JournalEntryTile: View {
+    @State var entry: JournalEntry
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ZStack {
+                RoundedRectangle(cornerRadius: 15)
+                    .fill(Color.designTextSecondary)
+                    .shadow(radius: 2, y: 2)
+                
+                VStack(alignment: .leading) {
+                    Text(entry.dateFormatted())
+                        .font(Font.customBody)
+                        .padding(.bottom, 5)
+                    
+                    Text(entry.title)
+                        .font(Font.customSubtitle)
+                        .bold()
+                    Text(entry.content)
+                        .font(Font.customBody)
+                        .fontWeight(.light)
+                        .lineLimit(1)
+                        .truncationMode(.tail)
+                        
+                    HStack {
+                        Spacer()
+                        Button {
+                            // Pin and unpin
+                        } label: {
+                            Image(systemName: "pin")
+                        }
+                        Button {
+                            // More button
+                        } label: {
+                            Image(systemName: "ellipsis")
+                        }
+                    }
+                    .padding(.top, 5)
+                    
+                }
+                .padding()
+                
+            }
+            .frame(height: 120)
     }
 }
 
 #Preview {
-    JournalEntryTile()
+    JournalEntryTile(entry: JournalEntry(entryId: "123", title: "Awesome walk at lake lag today", content: "I went on a walk around lake lag today and it was SOOOOO sick!", date: Date.now))
 }

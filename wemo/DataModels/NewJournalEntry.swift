@@ -46,16 +46,18 @@ class NewJournalEntry {
         return true
     }
     
-    func publishJournal(userId: String) async {
-        guard isJournalValid() else {
-            print("Journal needs to be filled in")
-            return
-        }
+    func publishJournal(userId: String) async throws -> JournalEntry? {
         do {
+            guard isJournalValid() else {
+                print("Journal needs to be filled in")
+                throw CustomError.runtimeError("invalid journal")
+            }
+            
             let entry: [String: AnyJSON] = try await supabase.database.from("journal_entries")
                 .insert(
                     ["title": title,
                      "body": content,
+                     "user_id": userId,
                      "is_pinned": String(isPinned)], returning: .representation)
                 .single()
                 .execute()
@@ -70,6 +72,7 @@ class NewJournalEntry {
             let localImages = images
             
             var imageUrls = [String]()
+            print("\nLOCAL IMAGES: \(localImages)")
             
             // Use id to store potential images
             if !localImages.isEmpty {
@@ -84,20 +87,21 @@ class NewJournalEntry {
             }
             
             // Update entry with image urls
-            let returnedEntry: [String: AnyJSON] = try await supabase.database.from("journal_entries")
+            let returnedEntry: JournalEntry = try await supabase.database.from("journal_entries")
                 .update(["image_urls": imageUrls], returning: .representation)
                 .eq("entry_id", value: entryId)
                 .single()
                 .execute()
                 .value
             
-            print("\nRETURNED ENTRY: \(returnedEntry)")
+            return returnedEntry
             
             // then use this to decode a journal entry object and push it to the entries page then exit the create page
                 
         } catch {
-            print("An error occured: could not public journal, \(error)")
+            print("An error occured: could not publish journal, \(error)")
         }
+        return nil
     }
     
     private func _storeImage(image: UIImage, fileName: String) async throws -> String {
@@ -105,6 +109,7 @@ class NewJournalEntry {
             throw CustomError.runtimeError("Error: could not get image data when storing new journal entry image")
         }
         
+        print("STORING IMAGE!!!")
         try await supabase.storage.from("journal_images")
             .upload(path: fileName, file: imageData)
         
