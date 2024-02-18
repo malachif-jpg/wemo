@@ -9,7 +9,7 @@ import SwiftUI
 
 struct JournalScreen: View {
     @State private var showCreateEntrySheet = false
-    
+    @State private var searchText = ""
     @Environment(User.self) var mainUser
     @Environment(JournalModel.self) var journalModel
     
@@ -18,31 +18,54 @@ struct JournalScreen: View {
             ZStack {
                 ScrollView {
                     VStack {
-                        HStack {
+                        HStack{
                             Text("Hi, \(mainUser.name)!")
                                 .bold()
                                 .font(.title3)
                             Spacer()
-                        }
-                        .padding(.horizontal)
-                        
-                        HStack {
+                            NavigationLink(destination: Text("Settings")) {
+                                Image(systemName: "gearshape").font(.system(size: 30))
+                            }.padding(.top, 5)
+                                .padding(.trailing, -5)
+                        }.padding(.bottom, 1)
+                        HStack{
                             Text(dateFormatted())
                             Spacer()
+                            
+                        }.padding(.bottom, 20)
+                        HStack{
+                            TextField("Search", text: $searchText)
+                                        .padding()
+                                        .padding(.leading, 35)
+                                        .background(
+                                            Color.gray.opacity(0.2)
+                                                .cornerRadius(10) //
+                                                .overlay(
+                                                    HStack {
+                                                        Image(systemName: "magnifyingglass")
+                                                            .foregroundColor(.gray)
+                                                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)    .padding(.leading, 8)
+                                                    }
+                                                )
+                                        ).padding(.bottom, 25)
+                                       
+                                        
                         }
-                        .padding(.horizontal)
-                        
-                        if journalModel.entries.isEmpty {
-                            Text("No journal entries :(")
-                        } else {
-                            ForEach(journalModel.entries, id: \.self) { entry in
-                                JournalEntryTile(entry: entry)
-                                    .padding()
+                        VStack{
+                            if journalModel.entries.isEmpty {
+                                Text("No journal entries :(")
+                            } else {
+                                ForEach(journalModel.entries, id: \.self) { entry in
+                                    JournalEntryTile(entry: entry)
+                                        .padding(.vertical)
+                                }
                             }
+                            
                         }
                         
                     }
                     .padding(.vertical)
+                    .padding(.horizontal, 30)
                 }
                 .scrollIndicators(.hidden)
                 VStack {
@@ -76,11 +99,7 @@ struct JournalScreen: View {
                         .font(.largeTitle)
                 }
                 
-                ToolbarItem(placement: .topBarTrailing) {
-                    NavigationLink(destination: Text("Notifications")) {
-                        Image(systemName: "bell.badge.fill")
-                    }
-                }
+                
             }
             .fullScreenCover(isPresented: $showCreateEntrySheet) {
                 CreateEntryView(isPresented: $showCreateEntrySheet)

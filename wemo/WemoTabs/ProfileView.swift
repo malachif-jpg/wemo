@@ -18,28 +18,127 @@ struct ProfileView: View {
                 
                 Rectangle()
                     .foregroundColor(.designPrimary) // Set the rectangle's color to purple
-                    .frame(width: 1000, height: 120) // Specify the fixed size of the rectangle
-                    .padding(.bottom, 100)
+                    .frame(width: 1000, height: 220) // Specify the fixed size of the rectangle
+                    .padding(.bottom, 10)
+                    .ignoresSafeArea()
                 Image("profile").resizable()
                     .aspectRatio(contentMode: .fill) //
                     .frame(width: 200, height: 200)
-                HStack{
-                    NavigationLink(destination: Text("Notifications")) {
-                                Image(systemName: "bell.badge.fill")
-                        
-                            }
-                    }
+                
+                
             }
             ZStack {
-                 ScrollView {
+                 
                     VStack{
-                         
                          
                         Text("Hi, \(mainUser.name)!")
                             .bold()
                             .font(.title2)
                         Spacer()
                         Text(dateFormatted())
+                        Spacer().frame(height: 20)
+                        
+                        // count-section
+                        ZStack {
+                                RoundedRectangle(cornerRadius: 40) // Specify the corner radius
+                                    .fill(Color.white)
+                                    .frame(width: 350, height: 75)
+                                    .shadow(radius: 2, y: 3)
+                            HStack{
+                                Spacer()
+                                Spacer()
+
+                                VStack{
+                                    
+                                    Text("10")
+                                        .foregroundColor(.black) // Text color
+                                        .bold()
+                                        .font(.system(size: 18))
+                                    
+                                    Text("Entries")
+                                        .foregroundColor(.black) // Text color
+                                        .font(.system(size: 14))
+                                    
+                                }
+                                Spacer()
+                                Rectangle()
+                                        .fill(Color.gray) // Set the color of your line
+                                        .frame(width: 1, height: 50) // Set the width and height of the line
+                                Spacer()
+                                VStack{
+                                    Text("3")
+                                        .foregroundColor(.black) // Text color
+                                        .bold()
+                                        .font(.system(size: 18))
+                                    Text("Streaks")
+                                        .foregroundColor(.black) // Text color
+                                        .font(.system(size: 14))
+                                }
+                                Spacer()
+                                Rectangle()
+                                        .fill(Color.gray) // Set the color of your line
+                                        .frame(width: 1, height: 50) // Set the width and height of the line
+                                Spacer()
+                                VStack{
+                                    Text("2")
+                                        .foregroundColor(.black) // Text color
+                                        .bold()
+                                        .font(.system(size: 18))
+                                    Text("Badges")
+                                        .foregroundColor(.black) // Text color
+                                        .font(.system(size: 14))
+                                }
+                                Spacer()
+                                Spacer()
+                                
+                            }.multilineTextAlignment(.center)
+                                }
+                        Spacer().frame(height: 40)
+                        
+                        
+                        Text("BADGES").bold().foregroundColor(.designPrimary).font(.system(size: 20))
+                        
+                        ScrollView {
+                        // badges (3 rows, 2 columns)
+                        
+                            HStack{
+                            Spacer()
+                                NavigationLink(destination: FirstPageFlyer()){
+                                    Image("first-page-flyer-badge").resizable()
+                                        .aspectRatio(contentMode: .fill) //
+                                    .frame(width: 150, height: 150)}
+                            Spacer()
+                                NavigationLink(destination:StreakStarterBadge()){
+                                    Image("chatbot-confidant-badge").resizable()
+                                        .aspectRatio(contentMode: .fill) //
+                                        .frame(width: 150, height: 150)
+                                }
+                            Spacer()
+                        }
+                        HStack{
+                            Spacer()
+                            
+                            Image("locked-badge").resizable()
+                                .aspectRatio(contentMode: .fill) //
+                                .frame(width: 150, height: 150)
+                            Spacer()
+                            Image("locked-badge").resizable()
+                                .aspectRatio(contentMode: .fill) //
+                                .frame(width: 150, height: 150)
+                            Spacer()
+                        }
+                        HStack{
+                            Spacer()
+                            Image("locked-badge").resizable()
+                                .aspectRatio(contentMode: .fill) //
+                                .frame(width: 150, height: 150)
+                            Spacer()
+                            Image("locked-badge").resizable()
+                                .aspectRatio(contentMode: .fill) //
+                                .frame(width: 150, height: 150)
+                            Spacer()
+                        }
+                        
                     }
                         
                     }
@@ -48,30 +147,17 @@ struct ProfileView: View {
             
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                
                 ToolbarItem(placement: .principal) {
-                    
-                    ZStack {
-                            // Background color
-                            Rectangle()
-                                .foregroundColor(Color.designPrimary) // Use your custom color here
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                .edgesIgnoringSafeArea(.all) // Optional, to ensure it fills the available space
-                                .padding(.horizontal, -40)
-                                .padding(.top, -80)
-                            
-                            // Text on top of the background
-                            Text("wemo")
-                                .bold()
-                                .font(.largeTitle)
-                                .foregroundColor(.black) // Adjust text color as needed
-                       
-                        
-                        
-                        }
+                    Text("wemo")
+                        .bold()
+                        .font(.largeTitle)
                 }
                 
-                
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink(destination: Text("Settings")) {
+                        Image(systemName: "gearshape.fill")
+                    }.padding(.trailing, 10)
+                }
             }
         }
         

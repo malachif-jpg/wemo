@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WemoTabView: View {
     var body: some View {
+        
         TabView {
             JournalScreen()
                 .tabItem {
@@ -35,5 +36,6 @@ struct WemoTabView: View {
 
 #Preview {
     WemoTabView()
-        .environment(User(name: "", userId: ""))
+        .environment(User(name: "Hannah", userId: ""))
+        .environment(JournalModel())
 }
