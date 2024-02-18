@@ -84,7 +84,7 @@ class NewJournalEntry {
             }
             
             // Update entry with image urls
-            let returnedEntry: JournalEntry = try await supabase.database.from("journal_entries")
+            let returnedEntry: [String: AnyJSON] = try await supabase.database.from("journal_entries")
                 .update(["image_urls": imageUrls], returning: .representation)
                 .eq("entry_id", value: entryId)
                 .single()
