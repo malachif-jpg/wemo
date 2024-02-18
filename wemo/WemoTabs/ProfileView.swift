@@ -98,7 +98,7 @@ struct ProfileView: View {
                         
                         Text("BADGES").bold().foregroundColor(.designPrimary).font(.system(size: 20))
                         
-                        ScrollView {
+                        ScrollView(.vertical, showsIndicators: false)  {
                         // badges (3 rows, 2 columns)
                         
                             HStack{
@@ -109,7 +109,7 @@ struct ProfileView: View {
                                     .frame(width: 150, height: 150)}
                             Spacer()
                                 NavigationLink(destination:StreakStarterBadge()){
-                                    Image("chatbot-confidant-badge").resizable()
+                                    Image("streak-starter-badge").resizable()
                                         .aspectRatio(contentMode: .fill) //
                                         .frame(width: 150, height: 150)
                                 }
