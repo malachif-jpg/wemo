@@ -17,13 +17,29 @@ struct SelectJournalImagesView: View {
     let maxImages = 4
     
     // Define fixed sizes for grid items
-    let itemHeight: CGFloat = 150
-    let itemWidth: CGFloat = 150
+    let itemHeight: CGFloat = (UIScreen.main.bounds.width / 2) - 40
+    let itemWidth: CGFloat = (UIScreen.main.bounds.width / 2) - 40
     
 
     var body: some View {
         // Define the grid layout
         let columns: [GridItem] = Array(repeating: .init(.fixed(itemWidth)), count: images.isEmpty ? 1 : 2)
+        
+//        if images.count == 0 {
+//            
+//        }
+//        if images.count == 1 {
+//            
+//        }
+//        if images.count == 2 {
+//            
+//        }
+//        if images.count == 3 {
+//            
+//        }
+//        if images.count == 4 {
+//            
+//        }
         
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(images.indices, id: \.self) { index in
@@ -45,6 +61,7 @@ struct SelectJournalImagesView: View {
                     .frame(width: itemWidth, height: itemHeight)
                 }
             }
+        
             .padding()
             .onChange(of: selectedItem) {
                 handleImageChanges(item: selectedItem)

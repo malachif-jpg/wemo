@@ -2,7 +2,7 @@
 //  wemoApp.swift
 //  wemo
 //
-//  Created by Malachi Frazier on 2/7/24.
+//  Created by Malachi Frazier on 2/17/24.
 //
 
 import SwiftUI
@@ -22,10 +22,13 @@ struct wemoApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
+    
+    @State private var mainUser = User(name: "Hannah", userId: "b7a35889-a19c-42e8-b648-22dd102d227e")
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WemoTabView()
+                .environment(mainUser)
         }
         .modelContainer(sharedModelContainer)
     }
