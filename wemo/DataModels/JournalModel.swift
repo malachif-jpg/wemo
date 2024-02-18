@@ -18,7 +18,7 @@ public class JournalModel {
     
     // Init with Swift Data
     init() {
-        self.entries = [JournalEntry(title: "Swift", content: "Data", date: Date.now)]
+        self.entries = [JournalEntry(entryId: "", title: "Swift", content: "Data", date: Date.now)]
     }
     
     func loadEntries() {
