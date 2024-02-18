@@ -15,8 +15,10 @@ struct JournalEntryTile: View {
                 RoundedRectangle(cornerRadius: 15)
                     .fill(Color.designTextSecondary)
                     .shadow(radius: 2, y: 2)
+                    
                 
                 VStack(alignment: .leading) {
+                    Spacer()
                     Text(entry.dateFormatted())
                         .font(Font.customBody)
                         .padding(.bottom, 5)
@@ -24,6 +26,8 @@ struct JournalEntryTile: View {
                     Text(entry.title)
                         .font(Font.customSubtitle)
                         .bold()
+                    Spacer().frame(height: 3)
+                   
                     Text(entry.content)
                         .font(Font.customBody)
                         .fontWeight(.light)
@@ -46,10 +50,12 @@ struct JournalEntryTile: View {
                     .padding(.top, 5)
                     
                 }
-                .padding()
+                .padding(.vertical, 9)
+                .padding(.horizontal,15)
                 
             }
-            .frame(height: 120)
+
+            .frame(height: 110)
     }
 }
 

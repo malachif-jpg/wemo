@@ -37,6 +37,10 @@
 		75B7A27D2B81D91000BC22CC /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A27C2B81D91000BC22CC /* HelpScreen.swift */; };
 		75B7A2812B81EDB500BC22CC /* CommunityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */; };
 		75B7A2852B81FD6800BC22CC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2842B81FD6800BC22CC /* ProfileView.swift */; };
+		75B7A28C2B820A0900BC22CC /* FirstPageFlyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A28B2B820A0900BC22CC /* FirstPageFlyer.swift */; };
+		75B7A28E2B820A2E00BC22CC /* StreakStarterBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A28D2B820A2E00BC22CC /* StreakStarterBadge.swift */; };
+		75B7A2902B820D4500BC22CC /* ChatbotConfidant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A28F2B820D4500BC22CC /* ChatbotConfidant.swift */; };
+		75B7A2922B820D5000BC22CC /* MonthMemories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2912B820D5000BC22CC /* MonthMemories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 		75B7A27C2B81D91000BC22CC /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
 		75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityScreen.swift; sourceTree = "<group>"; };
 		75B7A2842B81FD6800BC22CC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		75B7A28B2B820A0900BC22CC /* FirstPageFlyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageFlyer.swift; sourceTree = "<group>"; };
+		75B7A28D2B820A2E00BC22CC /* StreakStarterBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakStarterBadge.swift; sourceTree = "<group>"; };
+		75B7A28F2B820D4500BC22CC /* ChatbotConfidant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotConfidant.swift; sourceTree = "<group>"; };
+		75B7A2912B820D5000BC22CC /* MonthMemories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthMemories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +204,7 @@
 				3774516C2B81945700886DFD /* CreateJournalEditBar.swift */,
 				75B7A2842B81FD6800BC22CC /* ProfileView.swift */,
 				75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */,
+				75B7A28A2B8209F100BC22CC /* Badges */,
 			);
 			path = WemoTabs;
 			sourceTree = "<group>";
@@ -225,6 +234,17 @@
 				377451602B81442D00886DFD /* Fonts.swift */,
 			);
 			path = Design;
+			sourceTree = "<group>";
+		};
+		75B7A28A2B8209F100BC22CC /* Badges */ = {
+			isa = PBXGroup;
+			children = (
+				75B7A28B2B820A0900BC22CC /* FirstPageFlyer.swift */,
+				75B7A28F2B820D4500BC22CC /* ChatbotConfidant.swift */,
+				75B7A2912B820D5000BC22CC /* MonthMemories.swift */,
+				75B7A28D2B820A2E00BC22CC /* StreakStarterBadge.swift */,
+			);
+			path = Badges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,13 +390,17 @@
 				377451612B81442D00886DFD /* Fonts.swift in Sources */,
 				3774516F2B81B9CF00886DFD /* CustomError.swift in Sources */,
 				377451692B816B3600886DFD /* SelectJournalImagesView.swift in Sources */,
+				75B7A28C2B820A0900BC22CC /* FirstPageFlyer.swift in Sources */,
 				75B7A2852B81FD6800BC22CC /* ProfileView.swift in Sources */,
+				75B7A28E2B820A2E00BC22CC /* StreakStarterBadge.swift in Sources */,
 				376E6C6B2B7536D700AF9D61 /* JournalModel.swift in Sources */,
 				376E6C342B748D5C00AF9D61 /* Item.swift in Sources */,
 				376E6C5C2B74A03900AF9D61 /* WemoTabView.swift in Sources */,
 				3774515F2B81404B00886DFD /* CreateEntryView.swift in Sources */,
 				75B7A27B2B81D1EA00BC22CC /* LLMScreen.swift in Sources */,
+				75B7A2902B820D4500BC22CC /* ChatbotConfidant.swift in Sources */,
 				376E6C662B7533A100AF9D61 /* JournalScreen.swift in Sources */,
+				75B7A2922B820D5000BC22CC /* MonthMemories.swift in Sources */,
 				376E6C642B74A24D00AF9D61 /* JournalEntry.swift in Sources */,
 				37C2BFD42B813D450056E345 /* Supabase.swift in Sources */,
 				3774516B2B8181C700886DFD /* Test2.swift in Sources */,

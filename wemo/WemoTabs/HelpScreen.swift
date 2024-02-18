@@ -37,7 +37,7 @@ struct HelpScreen: View {
                                 .frame(width: 250, height: 250)
                                 .padding(.trailing, -70)
                                 .padding(.leading, -50)
-                                .opacity(0.4)
+                                .opacity(0.5)
                         }
                         
                         Spacer().frame(height: 20)
@@ -74,7 +74,7 @@ struct HelpScreen: View {
                                 .frame(width: 250, height: 250)
                                 .padding(.leading, -40)
                                 .padding(.trailing, -40)
-                                .opacity(0.7)
+                                .opacity(1)
                             VStack{
                                 Text("Behind Vita's Responses: ").bold().foregroundColor(.designPrimary)+Text("Vita leverages Mixtral LLM to analyze your journal entries, offering responses that mirror your past thoughts and feelings.")
                                 Spacer()
@@ -101,7 +101,7 @@ struct HelpScreen: View {
                         Image("help-image-3").resizable()
                             .aspectRatio(contentMode: .fit) //
                             .frame(width: 250, height: 250)
-                            .opacity(0.7)
+                            .opacity(0.9)
                             .padding(.leading, -35)
                             .padding(.trailing, -45)
                         
