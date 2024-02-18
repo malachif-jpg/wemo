@@ -47,7 +47,7 @@ struct JournalScreen: View {
                                                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)    .padding(.leading, 8)
                                             }
                                         )
-                                ).padding(.bottom, 25)
+                                ).padding(.bottom, 20)
                             
                             
                         }
@@ -70,7 +70,7 @@ struct JournalScreen: View {
                                     
                                         .shadow(radius: 10) // Optional shadow for a bit of depth
                                     
-                                }
+                                }.padding(.bottom,10)
                                 
                             }
                         
