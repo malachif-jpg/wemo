@@ -25,16 +25,13 @@ struct wemoApp: App {
     @State private var mainUser = User(name: "Hannah", userId: "b7a35889-a19c-42e8-b648-22dd102d227e")
     @State private var journal = JournalModel()
     @State private var loading = true
-    @State private var isLoggedIn = false
+    @State private var isLoggedIn = true
    
 
 
     var body: some Scene {
         WindowGroup {
-//            if !isLoggedIn {
-//                LoginView(isLoggedIn: $isLoggedIn)
-//            }
-            if loading {
+            if !isLoggedIn {
                 LoadingScreen()
                     .task {
                         await journal.fetchEntries(userId: mainUser.userId)
