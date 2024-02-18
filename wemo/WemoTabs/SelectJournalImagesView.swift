@@ -9,6 +9,8 @@ import SwiftUI
 import PhotosUI
 
 struct SelectJournalImagesView: View {
+    @State var entry: NewJournalEntry
+    
     @State var selectedItem: PhotosPickerItem?
     @State private var data: Data?
     
@@ -23,7 +25,7 @@ struct SelectJournalImagesView: View {
 
     var body: some View {
         // Define the grid layout
-        let columns: [GridItem] = Array(repeating: .init(.fixed(itemWidth)), count: images.isEmpty ? 1 : 2)
+        let columns: [GridItem] = Array(repeating: .init(.fixed(itemWidth)), count: entry.images.isEmpty ? 1 : 2)
         
 //        if images.count == 0 {
 //            
@@ -42,13 +44,13 @@ struct SelectJournalImagesView: View {
 //        }
         
             LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(images.indices, id: \.self) { index in
+                ForEach(entry.images.indices, id: \.self) { index in
                     imageWithRemoveButton(for: index)
                         .frame(width: itemWidth, height: itemHeight) // Set fixed size for each item
                 }
                 
                 // Conditionally adjust the Add Button layout
-                if images.count < maxImages {
+                if entry.images.count < maxImages {
                     PhotosPicker(selection: $selectedItem, matching: .images) {
                         VStack {
                             Image(systemName: "plus.circle")
@@ -71,7 +73,7 @@ struct SelectJournalImagesView: View {
     @ViewBuilder
     private func imageWithRemoveButton(for index: Int) -> some View {
         ZStack(alignment: .topTrailing) {
-            images[index]
+            Image(uiImage: entry.images[index])
                 .resizable()
                 .scaledToFill()
                 .frame(width: itemWidth, height: itemHeight)
@@ -96,8 +98,7 @@ struct SelectJournalImagesView: View {
                 switch result {
                 case .success(let data):
                     if let data = data, let uiImage = UIImage(data: data) {
-                        let image = Image(uiImage: uiImage)
-                        images.append(image)
+                        entry.images.append(uiImage)
                         selectedItem = nil
                     } else {
                         print("\nError selecting photo: data is nil")
@@ -114,10 +115,10 @@ struct SelectJournalImagesView: View {
     
     func removeImage(at index: Int) {
         print("\nRemove image button pressed")
-        images.remove(at: index)
+        entry.images.remove(at: index)
     }
 }
 
 #Preview {
-    SelectJournalImagesView()
+    SelectJournalImagesView(entry: NewJournalEntry())
 }

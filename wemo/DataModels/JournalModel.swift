@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Supabase
 
 @Observable
 public class JournalModel {
@@ -18,10 +19,22 @@ public class JournalModel {
     
     // Init with Swift Data
     init() {
-        self.entries = [JournalEntry(entryId: "", title: "Swift", content: "Data", date: Date.now)]
+        self.entries = []
     }
     
-    func loadEntries() {
-        print("Load journal entries...")
+    func fetchEntries(userId: String) async {
+        do {
+            let entries: [JournalEntry] = try await supabase.database.from("journal_entries")
+                .select()
+                .eq("user_id", value: userId)
+                .order("created_at", ascending: false)
+                .execute()
+                .value
+            
+            self.entries = entries
+            
+        } catch {
+            print("An error has been encountered while fetching journal entries: \(error)")
+        }
     }
 }
