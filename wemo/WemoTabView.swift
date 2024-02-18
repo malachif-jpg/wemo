@@ -15,17 +15,17 @@ struct WemoTabView: View {
                     Image(systemName: "book")
                 }
             
-            Text("UPO + LLM")
+           LLMScreen()
                 .tabItem {
                     Image(systemName: "brain")
                 }
             
-            Text("Social Aspect")
+            CommunityScreen()
                 .tabItem {
                     Image(systemName: "figure.socialdance")
                 }
             
-            Text("Profile")
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person.fill")
                 }
@@ -35,4 +35,5 @@ struct WemoTabView: View {
 
 #Preview {
     WemoTabView()
+        .environment(User(name: "", userId: ""))
 }

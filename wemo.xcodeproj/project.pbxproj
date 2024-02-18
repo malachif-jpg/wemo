@@ -33,6 +33,10 @@
 		3774516F2B81B9CF00886DFD /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3774516E2B81B9CF00886DFD /* CustomError.swift */; };
 		37BF7BDA2B7DEB4700075886 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF7BD92B7DEB4700075886 /* Colors.swift */; };
 		37C2BFD42B813D450056E345 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C2BFD32B813D450056E345 /* Supabase.swift */; };
+		75B7A27B2B81D1EA00BC22CC /* LLMScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A27A2B81D1EA00BC22CC /* LLMScreen.swift */; };
+		75B7A27D2B81D91000BC22CC /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A27C2B81D91000BC22CC /* HelpScreen.swift */; };
+		75B7A2812B81EDB500BC22CC /* CommunityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */; };
+		75B7A2852B81FD6800BC22CC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2842B81FD6800BC22CC /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		3774516E2B81B9CF00886DFD /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		37BF7BD92B7DEB4700075886 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		37C2BFD32B813D450056E345 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		75B7A27A2B81D1EA00BC22CC /* LLMScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMScreen.swift; sourceTree = "<group>"; };
+		75B7A27C2B81D91000BC22CC /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
+		75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityScreen.swift; sourceTree = "<group>"; };
+		75B7A2842B81FD6800BC22CC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,10 +188,14 @@
 			isa = PBXGroup;
 			children = (
 				376E6C652B7533A100AF9D61 /* JournalScreen.swift */,
+				75B7A27A2B81D1EA00BC22CC /* LLMScreen.swift */,
+				75B7A27C2B81D91000BC22CC /* HelpScreen.swift */,
 				376E6C6C2B753E2B00AF9D61 /* JournalEntryTile.swift */,
 				3774515E2B81404B00886DFD /* CreateEntryView.swift */,
 				377451682B816B3600886DFD /* SelectJournalImagesView.swift */,
 				3774516C2B81945700886DFD /* CreateJournalEditBar.swift */,
+				75B7A2842B81FD6800BC22CC /* ProfileView.swift */,
+				75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */,
 			);
 			path = WemoTabs;
 			sourceTree = "<group>";
@@ -358,10 +370,12 @@
 				377451612B81442D00886DFD /* Fonts.swift in Sources */,
 				3774516F2B81B9CF00886DFD /* CustomError.swift in Sources */,
 				377451692B816B3600886DFD /* SelectJournalImagesView.swift in Sources */,
+				75B7A2852B81FD6800BC22CC /* ProfileView.swift in Sources */,
 				376E6C6B2B7536D700AF9D61 /* JournalModel.swift in Sources */,
 				376E6C342B748D5C00AF9D61 /* Item.swift in Sources */,
 				376E6C5C2B74A03900AF9D61 /* WemoTabView.swift in Sources */,
 				3774515F2B81404B00886DFD /* CreateEntryView.swift in Sources */,
+				75B7A27B2B81D1EA00BC22CC /* LLMScreen.swift in Sources */,
 				376E6C662B7533A100AF9D61 /* JournalScreen.swift in Sources */,
 				376E6C642B74A24D00AF9D61 /* JournalEntry.swift in Sources */,
 				37C2BFD42B813D450056E345 /* Supabase.swift in Sources */,
@@ -370,6 +384,8 @@
 				376E6C682B75355900AF9D61 /* User.swift in Sources */,
 				376E6C6D2B753E2B00AF9D61 /* JournalEntryTile.swift in Sources */,
 				377451632B8146D900886DFD /* NewJournalEntry.swift in Sources */,
+				75B7A2812B81EDB500BC22CC /* CommunityScreen.swift in Sources */,
+				75B7A27D2B81D91000BC22CC /* HelpScreen.swift in Sources */,
 				377451672B816B1C00886DFD /* MultilineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

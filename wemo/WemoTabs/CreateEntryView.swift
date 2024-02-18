@@ -147,4 +147,5 @@ struct CreateEntryView: View {
 
 #Preview {
     CreateEntryView(isPresented: .constant(true))
+        .environment(User(name: "", userId: ""))
 }
