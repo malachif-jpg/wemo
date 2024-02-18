@@ -22,15 +22,20 @@ struct wemoApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-    
     @State private var mainUser = User(name: "Hannah", userId: "b7a35889-a19c-42e8-b648-22dd102d227e")
     @State private var journal = JournalModel()
     @State private var loading = true
+    @State private var isLoggedIn = false
+   
+
 
     var body: some Scene {
         WindowGroup {
+//            if !isLoggedIn {
+//                LoginView(isLoggedIn: $isLoggedIn)
+//            }
             if loading {
-                Text("Loading...")
+                LoadingScreen()
                     .task {
                         await journal.fetchEntries(userId: mainUser.userId)
                         loading = false

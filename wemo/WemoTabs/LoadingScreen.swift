@@ -9,8 +9,24 @@ import SwiftUI
 
 struct LoadingScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        
+            VStack {
+                
+                Text("Unfolding your story, one page at a time...")
+                
+                    .font(.title2)
+                    .foregroundColor(.black)
+                    .padding(30)
+                    .padding(.horizontal,20)
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: .designPrimary))
+                
+                    .scaleEffect(2)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.white)
+            .edgesIgnoringSafeArea(.all)
+        }
 }
 
 #Preview {

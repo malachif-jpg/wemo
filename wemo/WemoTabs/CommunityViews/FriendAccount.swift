@@ -1,5 +1,5 @@
 //
-//  ProfileView.swift
+//  FriendAccount.swift
 //  wemo
 //
 //  Created by Hannah Kim on 2/18/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileView: View {
+struct FriendAccount: View {
     @State private var journalModel = JournalModel()
     @State private var showCreateEntrySheet = false
     
@@ -21,7 +21,7 @@ struct ProfileView: View {
                     .frame(width: 1000, height: 220) // Specify the fixed size of the rectangle
                     .padding(.bottom, 10)
                     .ignoresSafeArea()
-                Image("profile").resizable()
+                Image("friend-profile").resizable()
                     .aspectRatio(contentMode: .fill) //
                     .frame(width: 200, height: 200)
                 
@@ -31,13 +31,38 @@ struct ProfileView: View {
                  
                     VStack{
                          
-                        Text("Hi, \(mainUser.name)!")
+                        Text("Jacob Smith")
                             .bold()
                             .font(.title2)
                         Spacer()
-                        Text(dateFormatted())
+                        Text("Last Entry: " + dateFormatted())
                         Spacer().frame(height: 20)
                         
+                        HStack{
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 40) // Specify the corner radius
+                                    .fill(Color.clear)
+                                    .stroke(Color.designPrimary, lineWidth: 2)
+                                    .frame(width: 120, height: 40)
+                                HStack{
+                                    Image(systemName: "person.2.fill").foregroundColor(.designPrimary)
+                                    Text("15").foregroundColor(.designPrimary).font(.system(size: 16)).bold()
+                                    
+                                }
+                            }
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 40) // Specify the corner radius
+                                    .fill(Color.clear)
+                                    .stroke(Color.designPrimary, lineWidth: 2)
+                                    .frame(width: 120, height: 40)
+                                HStack{
+                                    Text("Follow").foregroundColor(.designPrimary).font(.system(size: 16)).bold()
+                                }
+                            }
+                            
+                        }
+                        Spacer().frame(height: 20)
+                        ScrollView(.vertical, showsIndicators: false) {
                         // count-section
                         ZStack {
                                 RoundedRectangle(cornerRadius: 40) // Specify the corner radius
@@ -80,7 +105,7 @@ struct ProfileView: View {
                                         .frame(width: 1, height: 50) // Set the width and height of the line
                                 Spacer()
                                 VStack{
-                                    Text("2")
+                                    Text("4")
                                         .foregroundColor(.black) // Text color
                                         .bold()
                                         .font(.system(size: 18))
@@ -93,12 +118,15 @@ struct ProfileView: View {
                                 
                             }.multilineTextAlignment(.center)
                                 }
-                        Spacer().frame(height: 40)
                         
+                       
+                        
+                        
+                        Spacer().frame(height: 40)
                         
                         Text("BADGES").bold().foregroundColor(.designPrimary).font(.system(size: 20))
                         
-                        ScrollView(.vertical, showsIndicators: false)  {
+                        
                         // badges (3 rows, 2 columns)
                         
                             HStack{
@@ -117,15 +145,20 @@ struct ProfileView: View {
                         }
                         HStack{
                             Spacer()
+                            NavigationLink(destination:ChatbotConfidant()){
+                                Image("chatbot-confidant-badge").resizable()
+                                    .aspectRatio(contentMode: .fill) //
+                                    .frame(width: 150, height: 150)
+                            }
+                            Spacer()
                             
-                            Image("locked-badge").resizable()
-                                .aspectRatio(contentMode: .fill) //
-                                .frame(width: 150, height: 150)
+                            NavigationLink(destination:MonthMemories()){
+                                Image("month-memories-badge").resizable()
+                                    .aspectRatio(contentMode: .fill) //
+                                    .frame(width: 150, height: 150)
+                            }
                             Spacer()
-                            Image("locked-badge").resizable()
-                                .aspectRatio(contentMode: .fill) //
-                                .frame(width: 150, height: 150)
-                            Spacer()
+                            
                         }
                         HStack{
                             Spacer()
@@ -173,10 +206,9 @@ struct ProfileView: View {
         
         return formattedDate
     }
-
 }
 
 #Preview {
-    ProfileView()
+    FriendAccount()
         .environment(User(name: "Hannah", userId: ""))
 }
