@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct LeaderBoardView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        var body: some View {
+            NavigationStack {
+                ZStack {
+                    ScrollView(.vertical, showsIndicators: false){
+                        VStack{
+                            Image("leadership").resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 350, height: 160)
+                                .padding(.vertical, 4)
+                                .shadow(color: .gray, radius: 1, x: 0, y: 1)
+                            
+                        }.padding(.vertical, 240)
+                        
+                    }
+                }
+            }
+        }
+        
     }
-}
 
-#Preview {
-    LeaderBoardView()
-}
+    #Preview {
+        LeaderBoardView()
+    }

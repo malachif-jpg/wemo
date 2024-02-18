@@ -35,12 +35,18 @@
 		37C2BFD42B813D450056E345 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C2BFD32B813D450056E345 /* Supabase.swift */; };
 		75B7A27B2B81D1EA00BC22CC /* LLMScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A27A2B81D1EA00BC22CC /* LLMScreen.swift */; };
 		75B7A27D2B81D91000BC22CC /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A27C2B81D91000BC22CC /* HelpScreen.swift */; };
-		75B7A2812B81EDB500BC22CC /* CommunityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */; };
 		75B7A2852B81FD6800BC22CC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2842B81FD6800BC22CC /* ProfileView.swift */; };
 		75B7A28C2B820A0900BC22CC /* FirstPageFlyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A28B2B820A0900BC22CC /* FirstPageFlyer.swift */; };
 		75B7A28E2B820A2E00BC22CC /* StreakStarterBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A28D2B820A2E00BC22CC /* StreakStarterBadge.swift */; };
 		75B7A2902B820D4500BC22CC /* ChatbotConfidant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A28F2B820D4500BC22CC /* ChatbotConfidant.swift */; };
 		75B7A2922B820D5000BC22CC /* MonthMemories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2912B820D5000BC22CC /* MonthMemories.swift */; };
+		75B7A2A32B82562000BC22CC /* AuraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2A22B82562000BC22CC /* AuraView.swift */; };
+		75B7A2A72B8256A500BC22CC /* FriendActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2A62B8256A500BC22CC /* FriendActivity.swift */; };
+		75B7A2A92B82570400BC22CC /* FriendActivityTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2A82B82570400BC22CC /* FriendActivityTile.swift */; };
+		75B7A2AB2B82571700BC22CC /* FriendAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2AA2B82571700BC22CC /* FriendAccount.swift */; };
+		75B7A2AD2B82574200BC22CC /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2AC2B82574200BC22CC /* LoadingScreen.swift */; };
+		75B7A2AF2B82576700BC22CC /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2AE2B82576700BC22CC /* LeaderBoardView.swift */; };
+		75B7A2B12B82583300BC22CC /* CommunityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7A2B02B82583300BC22CC /* CommunityScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,12 +97,18 @@
 		37C2BFD32B813D450056E345 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 		75B7A27A2B81D1EA00BC22CC /* LLMScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMScreen.swift; sourceTree = "<group>"; };
 		75B7A27C2B81D91000BC22CC /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
-		75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityScreen.swift; sourceTree = "<group>"; };
 		75B7A2842B81FD6800BC22CC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		75B7A28B2B820A0900BC22CC /* FirstPageFlyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageFlyer.swift; sourceTree = "<group>"; };
 		75B7A28D2B820A2E00BC22CC /* StreakStarterBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakStarterBadge.swift; sourceTree = "<group>"; };
 		75B7A28F2B820D4500BC22CC /* ChatbotConfidant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotConfidant.swift; sourceTree = "<group>"; };
 		75B7A2912B820D5000BC22CC /* MonthMemories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthMemories.swift; sourceTree = "<group>"; };
+		75B7A2A22B82562000BC22CC /* AuraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuraView.swift; path = wemo/AuraView.swift; sourceTree = SOURCE_ROOT; };
+		75B7A2A62B8256A500BC22CC /* FriendActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendActivity.swift; sourceTree = "<group>"; };
+		75B7A2A82B82570400BC22CC /* FriendActivityTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendActivityTile.swift; sourceTree = "<group>"; };
+		75B7A2AA2B82571700BC22CC /* FriendAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAccount.swift; sourceTree = "<group>"; };
+		75B7A2AC2B82574200BC22CC /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		75B7A2AE2B82576700BC22CC /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
+		75B7A2B02B82583300BC22CC /* CommunityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,15 +207,19 @@
 		376E6C5D2B74A1A700AF9D61 /* WemoTabs */ = {
 			isa = PBXGroup;
 			children = (
+				75B7A2A22B82562000BC22CC /* AuraView.swift */,
 				376E6C652B7533A100AF9D61 /* JournalScreen.swift */,
 				75B7A27A2B81D1EA00BC22CC /* LLMScreen.swift */,
 				75B7A27C2B81D91000BC22CC /* HelpScreen.swift */,
+				75B7A2AC2B82574200BC22CC /* LoadingScreen.swift */,
 				376E6C6C2B753E2B00AF9D61 /* JournalEntryTile.swift */,
 				3774515E2B81404B00886DFD /* CreateEntryView.swift */,
 				377451682B816B3600886DFD /* SelectJournalImagesView.swift */,
 				3774516C2B81945700886DFD /* CreateJournalEditBar.swift */,
+				75B7A2A82B82570400BC22CC /* FriendActivityTile.swift */,
+				75B7A2B02B82583300BC22CC /* CommunityScreen.swift */,
 				75B7A2842B81FD6800BC22CC /* ProfileView.swift */,
-				75B7A2802B81EDB500BC22CC /* CommunityScreen.swift */,
+				75B7A2A52B82569100BC22CC /* CommunityViews */,
 				75B7A28A2B8209F100BC22CC /* Badges */,
 			);
 			path = WemoTabs;
@@ -245,6 +261,16 @@
 				75B7A28D2B820A2E00BC22CC /* StreakStarterBadge.swift */,
 			);
 			path = Badges;
+			sourceTree = "<group>";
+		};
+		75B7A2A52B82569100BC22CC /* CommunityViews */ = {
+			isa = PBXGroup;
+			children = (
+				75B7A2A62B8256A500BC22CC /* FriendActivity.swift */,
+				75B7A2AA2B82571700BC22CC /* FriendAccount.swift */,
+				75B7A2AE2B82576700BC22CC /* LeaderBoardView.swift */,
+			);
+			path = CommunityViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +413,7 @@
 				3774516D2B81945700886DFD /* CreateJournalEditBar.swift in Sources */,
 				376E6C322B748D5C00AF9D61 /* ContentView.swift in Sources */,
 				37BF7BDA2B7DEB4700075886 /* Colors.swift in Sources */,
+				75B7A2A32B82562000BC22CC /* AuraView.swift in Sources */,
 				377451612B81442D00886DFD /* Fonts.swift in Sources */,
 				3774516F2B81B9CF00886DFD /* CustomError.swift in Sources */,
 				377451692B816B3600886DFD /* SelectJournalImagesView.swift in Sources */,
@@ -401,16 +428,21 @@
 				75B7A2902B820D4500BC22CC /* ChatbotConfidant.swift in Sources */,
 				376E6C662B7533A100AF9D61 /* JournalScreen.swift in Sources */,
 				75B7A2922B820D5000BC22CC /* MonthMemories.swift in Sources */,
+				75B7A2AB2B82571700BC22CC /* FriendAccount.swift in Sources */,
+				75B7A2AF2B82576700BC22CC /* LeaderBoardView.swift in Sources */,
 				376E6C642B74A24D00AF9D61 /* JournalEntry.swift in Sources */,
+				75B7A2A92B82570400BC22CC /* FriendActivityTile.swift in Sources */,
+				75B7A2B12B82583300BC22CC /* CommunityScreen.swift in Sources */,
 				37C2BFD42B813D450056E345 /* Supabase.swift in Sources */,
+				75B7A2AD2B82574200BC22CC /* LoadingScreen.swift in Sources */,
 				3774516B2B8181C700886DFD /* Test2.swift in Sources */,
 				376E6C302B748D5C00AF9D61 /* wemoApp.swift in Sources */,
 				376E6C682B75355900AF9D61 /* User.swift in Sources */,
 				376E6C6D2B753E2B00AF9D61 /* JournalEntryTile.swift in Sources */,
 				377451632B8146D900886DFD /* NewJournalEntry.swift in Sources */,
-				75B7A2812B81EDB500BC22CC /* CommunityScreen.swift in Sources */,
 				75B7A27D2B81D91000BC22CC /* HelpScreen.swift in Sources */,
 				377451672B816B1C00886DFD /* MultilineTextField.swift in Sources */,
+				75B7A2A72B8256A500BC22CC /* FriendActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
